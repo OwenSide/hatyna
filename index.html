@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Хатина</title>
+    <link rel="shortcut icon" href="icons/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo-link" href="">
+                    <img class="header__logo-img" src="icons/logo2.svg" alt="logo">
+                </a>
+
+                <ul class="header__list">
+                    <li class="header__list-item active">
+                        <a class="header__list-link" href="#">
+                            Домашня
+                        </a>
+                    </li>
+                    <li class="header__list-item">
+                        <a class="header__list-link" href="#">
+                            Про нас
+                        </a>
+                    </li>
+                    <li class="header__list-item">
+                        <a class="header__list-link" href="#">
+                            Вірні друзі
+                        </a>
+                    </li>
+                    <li class="header__list-item">
+                        <a class="header__list-link" href="#">
+                            Наші умови
+                        </a>
+                    </li>
+                    <li class="header__list-item">
+                        <a class="header__list-link" href="#">
+                            Локація
+                        </a>
+                    </li>
+                    <li class="header__list-item mr-24">
+                        <a class="header__list-link" href="#">
+                            Контакти
+                        </a>
+                    </li>
+                    <li class="header__list-item mr-24">
+                        <div class="header__custom-select">
+                            <select id="language" onchange="changeLanguage()">
+                                <option value="ua">UA</option>
+                                <option value="en">EN</option>
+                                <option value="fr">FR</option>
+                                <option value="de">DE</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+
+                <a class="button" href="#">
+                    Допомогти
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="choose">
+            <div class="container">
+                <div class="choose__inner">
+                    <div class="choose__wrapper">
+                        <h1 class="choose__title">
+                            Цим оченятам дуже потрібні любов і турбота
+                        </h1>
+                        <p class="choose__text">
+                            Вірний друг радітиме тобі завжди.
+                            Йому потрібно дуже мало - <br>
+                            теплий дім та дбайливий господар
+                        </p>
+                        <a class="button button-choose" href="#">Обрати</a>
+                    </div>
+                    <div class="choose__img">
+                        <img src="img/image1.png" alt="dog">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="about__inner">
+                    <div class="about__img">
+                        <img src="img/image2.png" alt="dog">
+                    </div>
+                    <div class="about__wrapper">
+                        <h2 class="about__title">
+                            Про нас
+                        </h2>
+                        <p class="about__text">
+                            В притулку весь час знаходиться 350 дорослих та 20 цуценят. В залежності від швидкості прилаштувань цифри змінюються. <br><br>
+                            Все почалося зі співчуття до масово викинутих тварин у місті, доля яких всім була байдужою. Власними зусиллями та особистими коштами волонтерів та небайдужих людей ми розпочали  прилаштування та стерилізацію тварин для зменшення кількості безхатьків.
+                            <!-- За роки нашої праці в рік стерилізується понад 400 тварин, а дім знаходять близько 240 безхатьків, деяких вдається прилаштувати навіть за кордон. Ми постійно покращуємо умови для проживання собак, проводимо ремонтні роботи вольєрів, облагороджуємо територію притулку. Проводимо масову вакцинацію собак, щоб уникнути спалаху захворювань.<br><br>
+
+                            Наша робота вимагає дуже багато зусиль, як фізичних, так і фінансових. Допомога від міста полягає тільки у стерилізації та кастрації тварин, а всі інші витрати, включно із зарплатою, оплатою комунальних послуг, ремонтними роботами та лікуванням хворих тварин - це все на руках волонтерів та благодійних коштах.<br><br>
+
+                            Ми щиро сподіваємося, що наша праця не марна і нас підтримають люди по всьому світу!<br><br> -->
+                        </p>
+                        <a class="button button-about" href="#">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="friends">
+            <div class="container">
+                <div class="friends__inner">
+                    <h2 class="friends__title">
+                        Вибери собі вірного друга
+                    </h2>
+                    <h3 class="friends__subtitle">
+                        Не купуй – прихисти, адже справжня дружба не продається!
+                    </h3>
+                    <div class="friends__wrapper">
+                        <div class="friends__item">
+                            <img src="img/friend1.png" alt="dog">
+                            <div class="friends__item-box">
+                                <div class="friends__item-info">
+                                    <div class="friends__item-title">
+                                        Дружок
+                                    </div>
+                                    <div class="friends__item-text">
+                                        Вік 1 рік 3 місяці
+                                    </div>
+                                </div>
+                                <a class="friends__item-button">
+                                    <svg width="43" height="52" viewBox="0 0 43 52" fill="#79A5FF" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_ddddd_37174_309)">
+                                        <line x1="37.2921" y1="18.2925" x2="18.9073" y2="36.6772" stroke="#79A5FF" stroke-width="3"/>
+                                        <line x1="19.0607" y1="1.93934" x2="37.4454" y2="20.3241" stroke="#79A5FF" stroke-width="3"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_ddddd_37174_309" x="-3.38086" y="0.878662" width="45.8867" height="50.8826" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="0.5"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                                        <feBlend mode="normal" in2="effect1_dropShadow_37174_309" result="effect2_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="2"/>
+                                        <feGaussianBlur stdDeviation="1"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0"/>
+                                        <feBlend mode="normal" in2="effect2_dropShadow_37174_309" result="effect3_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="5"/>
+                                        <feGaussianBlur stdDeviation="1.5"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                                        <feBlend mode="normal" in2="effect3_dropShadow_37174_309" result="effect4_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="10"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0"/>
+                                        <feBlend mode="normal" in2="effect4_dropShadow_37174_309" result="effect5_dropShadow_37174_309"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect5_dropShadow_37174_309" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                        </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="friends__item">
+                            <img src="img/friend2.png" alt="dog">
+                            <div class="friends__item-box">
+                                <div class="friends__item-info">
+                                    <div class="friends__item-title">
+                                        Бім
+                                    </div>
+                                    <div class="friends__item-text">
+                                        Вік 8 місяців
+                                    </div>
+                                </div>
+                                <a class="friends__item-button">
+                                    <svg width="43" height="52" viewBox="0 0 43 52" fill="#79A5FF" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_ddddd_37174_309)">
+                                        <line x1="37.2921" y1="18.2925" x2="18.9073" y2="36.6772" stroke="#79A5FF" stroke-width="3"/>
+                                        <line x1="19.0607" y1="1.93934" x2="37.4454" y2="20.3241" stroke="#79A5FF" stroke-width="3"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_ddddd_37174_309" x="-3.38086" y="0.878662" width="45.8867" height="50.8826" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="0.5"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                                        <feBlend mode="normal" in2="effect1_dropShadow_37174_309" result="effect2_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="2"/>
+                                        <feGaussianBlur stdDeviation="1"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0"/>
+                                        <feBlend mode="normal" in2="effect2_dropShadow_37174_309" result="effect3_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="5"/>
+                                        <feGaussianBlur stdDeviation="1.5"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                                        <feBlend mode="normal" in2="effect3_dropShadow_37174_309" result="effect4_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="10"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0"/>
+                                        <feBlend mode="normal" in2="effect4_dropShadow_37174_309" result="effect5_dropShadow_37174_309"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect5_dropShadow_37174_309" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                        </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="friends__item">
+                            <img src="img/friend3.png" alt="dog">
+                            <div class="friends__item-box">
+                                <div class="friends__item-info">
+                                    <div class="friends__item-title">
+                                        Сільвер
+                                    </div>
+                                    <div class="friends__item-text">
+                                        Вік 1 рік 9 місяців
+                                    </div>
+                                </div>
+                                <a class="friends__item-button">
+                                    <svg width="43" height="52" viewBox="0 0 43 52" fill="#79A5FF" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_ddddd_37174_309)">
+                                        <line x1="37.2921" y1="18.2925" x2="18.9073" y2="36.6772" stroke="#79A5FF" stroke-width="3"/>
+                                        <line x1="19.0607" y1="1.93934" x2="37.4454" y2="20.3241" stroke="#79A5FF" stroke-width="3"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_ddddd_37174_309" x="-3.38086" y="0.878662" width="45.8867" height="50.8826" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="0.5"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                                        <feBlend mode="normal" in2="effect1_dropShadow_37174_309" result="effect2_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="2"/>
+                                        <feGaussianBlur stdDeviation="1"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0"/>
+                                        <feBlend mode="normal" in2="effect2_dropShadow_37174_309" result="effect3_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="5"/>
+                                        <feGaussianBlur stdDeviation="1.5"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                                        <feBlend mode="normal" in2="effect3_dropShadow_37174_309" result="effect4_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="10"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0"/>
+                                        <feBlend mode="normal" in2="effect4_dropShadow_37174_309" result="effect5_dropShadow_37174_309"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect5_dropShadow_37174_309" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                        </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="friends__item">
+                            <img src="img/friend4.png" alt="dog">
+                            <div class="friends__item-box">
+                                <div class="friends__item-info">
+                                    <div class="friends__item-title">
+                                        Білка
+                                    </div>
+                                    <div class="friends__item-text">
+                                        Вік 2 роки
+                                    </div>
+                                </div>
+                                <a class="friends__item-button">
+                                    <svg width="43" height="52" viewBox="0 0 43 52" fill="#79A5FF" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_ddddd_37174_309)">
+                                        <line x1="37.2921" y1="18.2925" x2="18.9073" y2="36.6772" stroke="#79A5FF" stroke-width="3"/>
+                                        <line x1="19.0607" y1="1.93934" x2="37.4454" y2="20.3241" stroke="#79A5FF" stroke-width="3"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_ddddd_37174_309" x="-3.38086" y="0.878662" width="45.8867" height="50.8826" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="0.5"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                                        <feBlend mode="normal" in2="effect1_dropShadow_37174_309" result="effect2_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="2"/>
+                                        <feGaussianBlur stdDeviation="1"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0"/>
+                                        <feBlend mode="normal" in2="effect2_dropShadow_37174_309" result="effect3_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="5"/>
+                                        <feGaussianBlur stdDeviation="1.5"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                                        <feBlend mode="normal" in2="effect3_dropShadow_37174_309" result="effect4_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="10"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0"/>
+                                        <feBlend mode="normal" in2="effect4_dropShadow_37174_309" result="effect5_dropShadow_37174_309"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect5_dropShadow_37174_309" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                        </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="friends__item">
+                            <img src="img/friend5.png" alt="dog">
+                            <div class="friends__item-box">
+                                <div class="friends__item-info">
+                                    <div class="friends__item-title">
+                                        Лаккі
+                                    </div>
+                                    <div class="friends__item-text">
+                                        Вік 2 роки 1 місяць 
+                                    </div>
+                                </div>
+                                <a class="friends__item-button">
+                                    <svg width="43" height="52" viewBox="0 0 43 52" fill="#79A5FF" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_ddddd_37174_309)">
+                                        <line x1="37.2921" y1="18.2925" x2="18.9073" y2="36.6772" stroke="#79A5FF" stroke-width="3"/>
+                                        <line x1="19.0607" y1="1.93934" x2="37.4454" y2="20.3241" stroke="#79A5FF" stroke-width="3"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_ddddd_37174_309" x="-3.38086" y="0.878662" width="45.8867" height="50.8826" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="0.5"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                                        <feBlend mode="normal" in2="effect1_dropShadow_37174_309" result="effect2_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="2"/>
+                                        <feGaussianBlur stdDeviation="1"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0"/>
+                                        <feBlend mode="normal" in2="effect2_dropShadow_37174_309" result="effect3_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="5"/>
+                                        <feGaussianBlur stdDeviation="1.5"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                                        <feBlend mode="normal" in2="effect3_dropShadow_37174_309" result="effect4_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="10"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0"/>
+                                        <feBlend mode="normal" in2="effect4_dropShadow_37174_309" result="effect5_dropShadow_37174_309"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect5_dropShadow_37174_309" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                        </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="friends__item">
+                            <img src="img/friend6.png" alt="dog">
+                            <div class="friends__item-box">
+                                <div class="friends__item-info">
+                                    <div class="friends__item-title">
+                                        Журик
+                                    </div>
+                                    <div class="friends__item-text">
+                                        Вік 1 рік 
+                                    </div>
+                                </div>
+                                <a class="friends__item-button">
+                                    <svg width="43" height="52" viewBox="0 0 43 52" fill="#79A5FF" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_ddddd_37174_309)">
+                                        <line x1="37.2921" y1="18.2925" x2="18.9073" y2="36.6772" stroke="#79A5FF" stroke-width="3"/>
+                                        <line x1="19.0607" y1="1.93934" x2="37.4454" y2="20.3241" stroke="#79A5FF" stroke-width="3"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_ddddd_37174_309" x="-3.38086" y="0.878662" width="45.8867" height="50.8826" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="0.5"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                                        <feBlend mode="normal" in2="effect1_dropShadow_37174_309" result="effect2_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="2"/>
+                                        <feGaussianBlur stdDeviation="1"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0"/>
+                                        <feBlend mode="normal" in2="effect2_dropShadow_37174_309" result="effect3_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="5"/>
+                                        <feGaussianBlur stdDeviation="1.5"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                                        <feBlend mode="normal" in2="effect3_dropShadow_37174_309" result="effect4_dropShadow_37174_309"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="10"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0"/>
+                                        <feBlend mode="normal" in2="effect4_dropShadow_37174_309" result="effect5_dropShadow_37174_309"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect5_dropShadow_37174_309" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                        </svg>                 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button button-about button-friends">Показати більше</button>
+                </div>
+            </div>
+        </section>
+        <section class="conditions">
+            <div class="container">
+                <div class="conditions__inner">
+                    <h2 class="conditions__title">
+                        Наші умови
+                    </h2>
+                    <div class="conditions__wrapper">
+                        <div class="conditions__item">
+                            <h3 class="conditions__item-title">
+                                Лише власник
+                            </h3>
+                            <div class="conditions__item-text">
+                                Собаку чи кота віддаємо лише в руки майбутньому власнику  
+                            </div>
+                            <img class="conditions__item-img" src="img/image3.png" alt="dog">
+                        </div>
+                        <div class="conditions__item">
+                            <img class="conditions__item-img" src="img/image4.png" alt="cat">
+                            <h3 class="conditions__item-title">
+                                Тварина для сім'ї
+                            </h3>
+                            <div class="conditions__item-text">
+                                Творинки не для утримання на ланцюгу, охорони підприєства
+                                чи самовигулу
+                            </div>
+                        </div>
+                        <div class="conditions__item">
+                            <h3 class="conditions__item-title ml45px">
+                                Відповідальність
+                            </h3>
+                            <div class="conditions__item-text ml45px">
+                                Не забирайте тварину з притулку, якщо не готові про неї піклуватись
+                            </div>
+                            <img class="conditions__item-img" src="img/image5.png" alt="dog">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="location">
+            <div class="container">
+                <div class="location_inner">
+                    <h2 class="location__title">
+                        Локація
+                    </h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84005.92323193145!2d24.943827173559548!3d48.85468061808981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730def647b23c11%3A0x6ba9512bd049e058!2z0KLQu9GD0LzQsNGHLCDQmNCy0LDQvdC-LdCk0YDQsNC90LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCwLCA3ODAwMA!5e0!3m2!1sru!2spl!4v1727530946846!5m2!1sru!2spl" width="1130" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <div class="inner__contacts">
+                    <h2 class="contacts__title">Наші контакти</h2>
+                    <div class="contacts__wrapper">
+                        <div class="contacts__info">
+                            <div>
+                                У вас є питання?<br> 
+                                Зв'яжіться з нами безпосередньо:
+                            </div>
+                            <div class="contacts__info-text"><span class="contacts__info-color">Адреса</span>
+                                <address>cмт. Жук<br> Івано-Франківська область</address>
+                                
+                            </div>
+                            <div class="contacts__info-text"><span class="contacts__info-color">Телефон</span>
+                                <div>
+                                    <a href="tell:+380991234567">+38 (099) 123 45 67</a> <br>
+                                    <a href="tell:+380881234567">+38 (088) 123 45 67</a>
+                                </div>
+                            </div>
+                            <div class="contacts__info-text"><span class="contacts__info-color">Електронна адреса</span><a href="mailto:hatyna@gmail.com">hatyna@gmail.com</a></div>
+                        </div>
+                        <div class="contacts__img">
+                            <img src="img/contacts.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="help">
+            <div class="container">
+                <div class="help__inner">
+                    <h2 class="help__title">Як допомогти</h2>
+                    <div class="help__wrapper">
+                        <h3 class="help__subtitle">
+                            Бажаєте допомогти притулку?
+                        </h3>
+                        <div class="help__text">
+                            Перейдіть за посиланням та заповніть форму
+                            Ми з вами обов’язково звяжемось
+                        </div>
+                        <button class="button button-help">Зв'яжіться з нами</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__line"></div>
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__social">
+                    <img src="icons/logo2.svg" alt="">
+                    <div>Приєднутесь до нас в соціальних мережах</div>
+                    <ul>
+                        <li><a href="#"><img src="icons/Facebook.svg" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="icons/Instagram.svg" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="icons/Telegram.svg" alt="Telegram"></a></li>
+                    </ul>
+                </div>
+                <div class="footer__wrapper">
+                    <ul>
+                        <li><a href="">Про нас</a></li>
+                        <li><a href="">Наші умови</a></li>
+                        <li><a href="">Наша команда</a></li>
+                        <li><a href="">Історія створення</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Вірні друзі</a></li>
+                        <li><a href="">Обрати друга</a></li>
+                        <li><a href="">Щасливчики</a></li>
+                        <li><a href="">Стати волонтером</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Локація</a></li>
+                        <li><a href="">Контакти</a></li>
+                        <li><a href="">Інормація</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Допомогти матеріально:</a></li>
+                        <li><a href="">ГО “ХАТИНА”</a></li>
+                        <li><a href="">ЄДРПОУ:  123456789</a></li>
+                        <li><a href="">Карта Приватбанку</a></li>
+                        <li><a href="">4141   2929   4646   1111</a></li>
+                        <li><a href="">Прокопів Петро Павлович</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__email">Всі права захищено reserved@hatyna.ua</div>
+        </div>
+    </footer> -->
+
+    <script src=""></script>
+</body>
+</html>
